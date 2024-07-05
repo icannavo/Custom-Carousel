@@ -1,0 +1,600 @@
+/* GLOBAL STYLES -------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+body {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  color: rgb(var(--bs-tertiary-color-rgb));
+}
+
+/* CUSTOMIZE THE CAROUSEL -------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+  margin-bottom: 0rem;
+  padding-top: 0rem;/* Ajusta a altura do item do carrossel para telas pequenas */
+}
+
+.carousel-container {
+  display: flex;
+justify-content: center;
+  width: 100%; 
+}
+
+.carousel-item {
+  width: 100% !important;
+  position: relative;
+  overflow: hidden;
+  height: 60%;
+}
+
+/* Define heights for different screen sizes */
+@media (max-width: 576px) and (max-width: 400px) {
+  .carousel-item {
+    height: 270px !important; /* Ajusta a altura do item do carrossel para telas pequenas */
+  }
+}
+
+/* Define heights for different screen sizes */
+@media (max-width: 420px) {
+  .carousel-item {
+    height: 290px !important; /* Ajusta a altura do item do carrossel para telas pequenas */
+    top: -12em;
+  }
+}
+
+@media (max-width: 400px) {
+  .carousel-item {
+    height: 260px !important; /* Ajusta a altura do item do carrossel para telas pequenas */
+    top: -12em;
+  }
+}
+
+@media (min-width: 685px) and (max-width: 768px) {
+  .carousel-item {
+    height: 433px !important;
+    top: -6em;
+  }
+  .carousel-indicators {
+    top: 157px !important;
+    margin: 0 auto;
+}}
+
+@media (min-width: 576px) and (max-width: 685px) {
+  .carousel-item {
+    height: 433px !important;
+    top: -6em;
+  }
+  .carousel-indicators {
+    top: 295px !important;
+    margin: 0 auto;
+}}
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .carousel-item {
+    height: 470px !important;
+    top: -6em;
+  } 
+
+  .carousel-indicators {
+    top: 298px !important;
+    margin: 0 auto;
+}
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+ .carousel-indicators {
+  top: 389px !important;
+  margin: 0 auto;
+}
+}
+
+@media (max-width: 576px) {
+  .carousel-caption p {
+    font-size: 18px;
+  }
+
+  .carousel-indicators {
+    top: 294px !important;
+      margin: 0 auto;
+}
+.carousel-item {
+  height: 282px !important;
+  top: -12em;
+}}
+
+.carousel-caption .btn {
+  font-size: 16px;
+  padding: 8px 20px;
+}
+
+.carousel-caption h1 {
+  font-size: 28px;
+}
+
+/* CUSTOMIZE THE CAROUSEL -------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+  margin-bottom: 0rem;
+  padding-top: 0rem;
+} 
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.carousel-caption p {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 26px;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+  font-weight: 300;
+  line-height: 1.4;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.carousel-caption .btn {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #e4e4e4;
+  border-radius: 30px;
+  color: #d6d6d6;
+  text-transform: uppercase;
+  transition: background-color 0.4s, color 0.3s, transform 0.3s;
+  box-shadow: none;
+}
+
+.carousel-caption .btn:hover {
+  background-color: #ffffff;
+  color: #ffad33;
+  transform: scale(1.07);
+}
+
+.carousel-inner {
+  background: none;
+}
+
+.carousel-item video {
+  filter: brightness(0.8);
+}
+
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 25px;
+  height: 22px;
+  padding: 0;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
+  text-indent: -1000px;
+  cursor: pointer;
+  background-color: #000000;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  transition: opacity .6s ease;
+}
+
+.carousel-indicators {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: fixed;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  top: 46em;
+}
+
+@media (max-width: 768px) {
+  .carousel-indicators {
+    margin-right: 10%;
+    margin-left: 10%;
+    top: 70em;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-indicators {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 400px) {
+  .carousel-indicators {
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+  -ms-transition-property: opacity;
+  transition-property: opacity;
+}
+
+#fade-quote-carousel.carousel .carousel-indicators {
+  bottom: 200px;
+}
+
+#fade-quote-carousel.carousel .carousel-inner .active {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+  -ms-transition-property: opacity;
+  transition-property: opacity;
+}
+
+#fade-quote-carousel.carousel .carousel-indicators > li {
+  background-color: #efd236;
+  border: none;
+}
+
+#fade-quote-carousel.carousel {
+  padding-bottom: 0px;
+  height: auto;
+  position: relative;
+}
+
+.carousel-caption h1 {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 46px;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  margin-bottom: 15px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.carousel-caption .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.carousel-item {
+  width: 100% !important;
+  position: relative;
+  overflow: hidden;
+  height: 60%;
+}
+
+@media (max-width: 992px) {
+  .carousel-item {
+    height: 570px !important;
+    margin-bottom: -317px;
+    top: -173px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .carousel-item {
+    height: 442px !important;
+    margin-bottom: -3.5em;
+    top: -3em;
+    }
+}
+
+@media (min-width: 1200px){
+  .carousel-item {
+    height: 564px !important;
+    margin-bottom: -5.5em;
+    top: -3em;
+   }
+}
+
+@media (min-width: 686px) and (max-width: 768px) {
+  .carousel-item {
+    height: 322px !important;
+    margin-bottom: -11.5em;
+    top: -9.5em;
+  }
+}
+
+@media (min-width: 686px) and (max-width: 576px) {
+.carousel-item {
+    height: 318px !important;
+    margin-bottom: -5.5em;
+    top: -6.5em;
+}}
+
+.background-video {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  height: 63%;
+  object-fit: cover;
+  z-index: -1; /* Ensure the video stays behind the content */
+}
+
+/* MARKETING CONTENT -------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+/* Featurettes ------------------------- */
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* RESPONSIVE CSS -------------------------------------------------- */
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+.custom-btn {
+  background-color: rgb(255, 255, 255);
+  border-color: transparent; /* Define a cor da borda como transparente */
+  transition: background-color 0.5s ease; /* Adiciona uma transição suave */
+}
+
+.custom-btn {
+  background-color: rgba(0, 115, 247, 0.4); /* Defina a cor desejada */
+  border: none; /* Remova a borda */
+}
+
+.btn-primary {
+  background-color: rgb(255, 255, 255) !important; /* Defina a cor desejada */
+  border: none !important; /* Remova a borda */
+}
+
+/* Responsividade para telas pequenas (celulares) */
+@media (max-width: 576px) {
+  .carousel-caption p {
+    font-size: 18px; /* Reduz o tamanho da fonte para telas pequenas */
+  }
+
+  .carousel-caption .btn {
+    font-size: 16px; /* Reduz o tamanho da fonte dos botões para telas pequenas */
+    padding: 8px 20px; /* Ajusta o padding dos botões */
+  }
+
+  .carousel-caption h1 {
+    font-size: 28px; /* Reduz o tamanho da fonte para a legenda em telas pequenas */
+  }
+}
+
+/* Estilos para a descrição */
+.carousel-caption p {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 26px;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+  font-weight: 300;
+  line-height: 1.4;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Estilos para o botão */
+.carousel-caption .btn {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #e4e4e4; /* Laranja */
+  border-radius: 30px;
+  color: #d6d6d6;
+  text-transform: uppercase;
+  transition: background-color 0.4s, color 0.3s, transform 0.3s;
+  box-shadow: none;
+}
+
+.custom-btn:hover {
+  background-color: rgba(110, 110, 110, 0.925) !important; /* Muda a cor de fundo para vermelho quando o cursor passar sobre o botão */
+  border-color: transparent; /* Mantém a cor da borda transparente quando o cursor passar sobre o botão */
+}
+
+.carousel-caption .btn:hover {
+  background-color: #ffffff;
+  color:  #ffad33;
+  transform: scale(1.07);
+}
+
+.carousel-caption .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Animação para a descrição */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(90px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos adicionais para o carrossel */
+.carousel-inner {
+  background: none;
+}
+
+.carousel-item video {
+  filter: brightness(0.8); /* Reduz o brilho do vídeo levemente */
+}
+
+/* Estilos para a legenda */
+.carousel-caption h1 {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 46px;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); /* Sombra escura atrás do texto */
+  margin-bottom: 15px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Animação para a legenda */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-160px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.centered-indicators {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 25px;
+  height: 22px;
+  padding: 0;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
+  text-indent: -1000px;
+  cursor: pointer;
+  background-color: #000000;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  transition: opacity .6s ease;
+  }
+
+.carousel-indicators {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: fixed;
+  justify-content: center;
+  padding: 0;
+  margin-right: 20%;
+  margin-left: 15%;
+  top: 491px;
+}
+
+  @media (max-width: 768px) {
+    .carousel-indicators {
+      margin-right: 20%;
+      margin-left: 10%;
+      top: 70em;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .carousel-indicators {
+      margin-right: 19%;
+      margin-left: 19%;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .carousel-indicators {
+      margin-right: 19%;
+      margin-left: 19%;
+    }
+  }
+
+.carousel-indicators .active {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+  -ms-transition-property: opacity;
+  transition-property: opacity;
+}
+
+#fade-quote-carousel.carousel .carousel-indicators {
+  bottom: 200px;
+}
+
+#fade-quote-carousel.carousel .carousel-indicators > li {
+  background-color: #efd236;
+  border: none;
+}
+
+#fade-quote-carousel.carousel {
+  padding-bottom: 0px;
+      height: auto;
+      position: relative;
+}
+
+#fade-quote-carousel.carousel .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -ms-transition-property: opacity;
+  transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-inner .active {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+  -ms-transition-property: opacity;
+  transition-property: opacity;
+}
+
+#fade-quote-carousel blockquote {
+  text-align: center;
+  border: none;
+}
+
+/* Responsividade para telas pequenas (celulares) */
+@media (max-width: 576px) {
+  .carousel-caption p {
+    font-size: 18px; /* Reduz o tamanho da fonte para telas pequenas */
+  }
+
+  .carousel-caption .btn {
+    font-size: 16px; /* Reduz o tamanho da fonte dos botões para telas pequenas */
+    padding: 8px 20px; /* Ajusta o padding dos botões */
+  }
+
+  .carousel-caption h1 {
+    font-size: 28px; /* Reduz o tamanho da fonte para a legenda em telas pequenas */
+  }
+
+  .centered-indicators {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    bottom: 20px; /* Ajuste o espaçamento do indicador em relação ao fundo */
+    width: 100%;
+  }
+
+  .carousel-indicators {
+    bottom: 0; /* Remove a margem inferior dos indicadores */
+    border-bottom: 100px;
+    top: 48em;
+  }
+}
